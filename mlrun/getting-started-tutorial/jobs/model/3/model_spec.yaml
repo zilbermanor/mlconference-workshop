@@ -1,0 +1,38 @@
+key: model
+kind: model
+iter: 3
+tree: d188f9609d714e75b6eef174a2c6873a
+target_path: /User/getting-started-tutorial/jobs/model/3/
+hash: e1b5536b64b2a055e06d984944bba91f37b6a2f2
+size: 29706
+db_key: train_model
+extra_data:
+  confusion matrix table.csv: /User/getting-started-tutorial/jobs/model/3/confusion
+    matrix table.csv
+  confusion matrix: /User/getting-started-tutorial/jobs/model/plots/3/confusion-matrix.html
+  feature importances: /User/getting-started-tutorial/jobs/model/plots/3/feature-importances.html
+  feature importances table.csv: /User/getting-started-tutorial/jobs/model/3/feature
+    importances table.csv
+  precision_recall_multi: /User/getting-started-tutorial/jobs/model/plots/3/precision-recall-multiclass.html
+  roc_multi: /User/getting-started-tutorial/jobs/model/plots/3/roc-multiclass.html
+model_file: model.pkl
+metrics:
+  accuracy: 0.9411764705882353
+  test-error: 0.058823529411764705
+  auc-micro: 0.9969723183391003
+  auc-weighted: 0.993716577540107
+  f1-score: 0.9351851851851851
+  precision_score: 0.9351851851851851
+  recall_score: 0.9351851851851851
+inputs: []
+outputs: []
+framework: ''
+labels:
+  class: sklearn.ensemble.AdaBoostClassifier
+producer:
+  name: train
+  kind: run
+  uri: default/d188f9609d714e75b6eef174a2c6873a-3
+  owner: admin
+sources: []
+project: default

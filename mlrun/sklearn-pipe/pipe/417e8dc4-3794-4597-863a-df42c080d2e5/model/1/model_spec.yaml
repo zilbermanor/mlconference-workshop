@@ -1,0 +1,39 @@
+key: model
+kind: model
+iter: 1
+tree: 417e8dc4-3794-4597-863a-df42c080d2e5
+target_path: /User/workshop/mlrun/sklearn-pipe/pipe/417e8dc4-3794-4597-863a-df42c080d2e5/model/1/
+hash: a1c0d55cbb030265706fcb7431927ddebe345d34
+size: 127347
+db_key: train-skrf_model
+extra_data:
+  confusion matrix table.csv: /User/workshop/mlrun/sklearn-pipe/pipe/417e8dc4-3794-4597-863a-df42c080d2e5/model/1/confusion
+    matrix table.csv
+  confusion matrix: /User/workshop/mlrun/sklearn-pipe/pipe/417e8dc4-3794-4597-863a-df42c080d2e5/model/plots/1/confusion-matrix.html
+  feature importances: /User/workshop/mlrun/sklearn-pipe/pipe/417e8dc4-3794-4597-863a-df42c080d2e5/model/plots/1/feature-importances.html
+  feature importances table.csv: /User/workshop/mlrun/sklearn-pipe/pipe/417e8dc4-3794-4597-863a-df42c080d2e5/model/1/feature
+    importances table.csv
+  precision_recall_multi: /User/workshop/mlrun/sklearn-pipe/pipe/417e8dc4-3794-4597-863a-df42c080d2e5/model/plots/1/precision-recall-multiclass.html
+  roc_multi: /User/workshop/mlrun/sklearn-pipe/pipe/417e8dc4-3794-4597-863a-df42c080d2e5/model/plots/1/roc-multiclass.html
+model_file: model.pkl
+metrics:
+  accuracy: 0.9117647058823529
+  test-error: 0.08823529411764706
+  auc-micro: 0.995242214532872
+  auc-weighted: 0.9924598930481283
+  f1-score: 0.9038901601830663
+  precision_score: 0.903030303030303
+  recall_score: 0.9074074074074074
+inputs: []
+outputs: []
+framework: ''
+labels:
+  class: sklearn.ensemble.RandomForestClassifier
+producer:
+  name: train-skrf
+  kind: run
+  uri: sk-project/d77331bc07ec47d98d65f2f63ff5d26d-1
+  owner: admin
+  workflow: 417e8dc4-3794-4597-863a-df42c080d2e5
+sources: []
+project: sk-project

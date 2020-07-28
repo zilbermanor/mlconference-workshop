@@ -1,0 +1,54 @@
+name: getting-started-iris-admin
+functions:
+- name: get-data
+  spec:
+    kind: job
+    metadata:
+      name: get-data
+      tag: ''
+      project: getting-started-iris-admin
+    spec:
+      command: ''
+      args: []
+      image: mlrun/ml-models
+      env:
+      - name: V3IO_API
+        value: ''
+      - name: V3IO_USERNAME
+        value: ''
+      - name: V3IO_ACCESS_KEY
+        value: ''
+      default_handler: ''
+      entry_points:
+        get_data:
+          name: get_data
+          doc: ''
+          parameters:
+          - name: context
+            default: ''
+          - name: source_url
+            default: ''
+          - name: format
+            default: csv
+          outputs:
+          - default: ''
+          lineno: 7
+      description: ''
+      build:
+        functionSourceCode: IyBHZW5lcmF0ZWQgYnkgbnVjbGlvLmV4cG9ydC5OdWNsaW9FeHBvcnRlcgoKZnJvbSBvcyBpbXBvcnQgcGF0aAppbXBvcnQgcGFuZGFzIGFzIHBkCgoKZGVmIGdldF9kYXRhKGNvbnRleHQsIHNvdXJjZV91cmwsIGZvcm1hdD0nY3N2Jyk6CgogICAgaXJpc19kYXRhc2V0ID0gcGQucmVhZF9jc3Yoc3RyKHNvdXJjZV91cmwpKQoKICAgIHRhcmdldF9wYXRoID0gcGF0aC5qb2luKGNvbnRleHQuYXJ0aWZhY3RfcGF0aCwgJ2RhdGEnKQogICAgY29udGV4dC5sb2dnZXIuaW5mbygnU2F2aW5nIElyaXMgZGF0YSBzZXQgdG8ge30gLi4uJy5mb3JtYXQodGFyZ2V0X3BhdGgpKQoKICAgIGNvbnRleHQubG9nX2RhdGFzZXQoJ2lyaXNfZGF0YXNldCcsIGRmPWlyaXNfZGF0YXNldCwgZm9ybWF0PWZvcm1hdCwKICAgICAgICAgICAgICAgICAgICAgICAgaW5kZXg9RmFsc2UsIGFydGlmYWN0X3BhdGg9dGFyZ2V0X3BhdGgpCgo=
+        commands: []
+- url: hub://describe
+  name: describe
+- url: hub://sklearn_classifier
+  name: train
+- url: hub://test_classifier
+  name: test
+- url: hub://model_server
+  name: serving
+- url: hub://model_server_tester
+  name: serving-tester
+workflows:
+- name: main
+  path: workflow.py
+artifacts: []
+artifact_path: ''

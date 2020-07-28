@@ -1,0 +1,22 @@
+
+<html>
+  <head>
+    <script
+        type="text/javascript"
+        src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([["Test", "Latency (microsec)"], [1, 6400], [2, 5052], [3, 4787], [4, 4609], [5, 4668], [6, 4836], [7, 4824], [8, 5027], [9, 6945], [10, 6773], [11, 6060], [12, 4870], [13, 4636], [14, 4692], [15, 4614]]);
+        var options = {"title": "latency"};
+        var chart = new google.visualization.LineChart(
+            document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+  </body>
+</html>

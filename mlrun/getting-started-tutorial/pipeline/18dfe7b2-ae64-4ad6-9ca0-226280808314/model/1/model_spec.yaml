@@ -1,0 +1,39 @@
+key: model
+kind: model
+iter: 1
+tree: 18dfe7b2-ae64-4ad6-9ca0-226280808314
+target_path: /User/getting-started-tutorial/pipeline/18dfe7b2-ae64-4ad6-9ca0-226280808314/model/1/
+hash: bac37ba59c4d1cbe89abbc75559f465362d5f798
+size: 121403
+db_key: train_model
+extra_data:
+  confusion matrix table.csv: /User/getting-started-tutorial/pipeline/18dfe7b2-ae64-4ad6-9ca0-226280808314/model/1/confusion
+    matrix table.csv
+  confusion matrix: /User/getting-started-tutorial/pipeline/18dfe7b2-ae64-4ad6-9ca0-226280808314/model/plots/1/confusion-matrix.html
+  feature importances: /User/getting-started-tutorial/pipeline/18dfe7b2-ae64-4ad6-9ca0-226280808314/model/plots/1/feature-importances.html
+  feature importances table.csv: /User/getting-started-tutorial/pipeline/18dfe7b2-ae64-4ad6-9ca0-226280808314/model/1/feature
+    importances table.csv
+  precision_recall_multi: /User/getting-started-tutorial/pipeline/18dfe7b2-ae64-4ad6-9ca0-226280808314/model/plots/1/precision-recall-multiclass.html
+  roc_multi: /User/getting-started-tutorial/pipeline/18dfe7b2-ae64-4ad6-9ca0-226280808314/model/plots/1/roc-multiclass.html
+model_file: model.pkl
+metrics:
+  accuracy: 0.9411764705882353
+  test-error: 0.058823529411764705
+  auc-micro: 0.9961072664359862
+  auc-weighted: 0.9949732620320856
+  f1-score: 0.9351851851851851
+  precision_score: 0.9351851851851851
+  recall_score: 0.9351851851851851
+inputs: []
+outputs: []
+framework: ''
+labels:
+  class: sklearn.ensemble.RandomForestClassifier
+producer:
+  name: train
+  kind: run
+  uri: getting-started-iris-admin/8a2b4dab3d934582b5193a75a6fff9fd-1
+  owner: admin
+  workflow: 18dfe7b2-ae64-4ad6-9ca0-226280808314
+sources: []
+project: getting-started-iris-admin

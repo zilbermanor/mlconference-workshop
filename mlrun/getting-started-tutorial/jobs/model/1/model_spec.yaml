@@ -1,0 +1,38 @@
+key: model
+kind: model
+iter: 1
+tree: d188f9609d714e75b6eef174a2c6873a
+target_path: /User/getting-started-tutorial/jobs/model/1/
+hash: 8124dbcae0b39fd234eb68df501840a25bd5c332
+size: 124923
+db_key: train_model
+extra_data:
+  confusion matrix table.csv: /User/getting-started-tutorial/jobs/model/1/confusion
+    matrix table.csv
+  confusion matrix: /User/getting-started-tutorial/jobs/model/plots/1/confusion-matrix.html
+  feature importances: /User/getting-started-tutorial/jobs/model/plots/1/feature-importances.html
+  feature importances table.csv: /User/getting-started-tutorial/jobs/model/1/feature
+    importances table.csv
+  precision_recall_multi: /User/getting-started-tutorial/jobs/model/plots/1/precision-recall-multiclass.html
+  roc_multi: /User/getting-started-tutorial/jobs/model/plots/1/roc-multiclass.html
+model_file: model.pkl
+metrics:
+  accuracy: 0.9411764705882353
+  test-error: 0.058823529411764705
+  auc-micro: 0.9965397923875432
+  auc-weighted: 0.9949732620320856
+  f1-score: 0.9351851851851851
+  precision_score: 0.9351851851851851
+  recall_score: 0.9351851851851851
+inputs: []
+outputs: []
+framework: ''
+labels:
+  class: sklearn.ensemble.RandomForestClassifier
+producer:
+  name: train
+  kind: run
+  uri: default/d188f9609d714e75b6eef174a2c6873a-1
+  owner: admin
+sources: []
+project: default

@@ -1,0 +1,27 @@
+key: mymodel
+kind: model
+iter: 0
+tree: 1c6513fdc0b244a69aac07c9e52c73aa
+target_path: /User/workshop/mlrun/basics/data/models/
+hash: 8170b9a53bbb1f4d52733bc6824955e3a362d4a1
+size: 10
+db_key: my-training_mymodel
+model_file: model.txt
+metrics:
+  accuracy: 0.85
+parameters:
+  xx: abc
+  one_more: 5
+inputs: []
+outputs: []
+framework: ''
+updated: '2020-07-28T19:11:34.357654+00:00'
+labels:
+  framework: xgboost
+producer:
+  name: my-training
+  kind: run
+  uri: default/1c6513fdc0b244a69aac07c9e52c73aa
+  owner: admin
+sources: []
+project: default

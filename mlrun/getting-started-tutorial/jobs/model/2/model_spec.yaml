@@ -1,0 +1,50 @@
+key: model
+kind: model
+iter: 2
+tree: d188f9609d714e75b6eef174a2c6873a
+target_path: /User/getting-started-tutorial/jobs/model/2/
+hash: 9452e7316f129229274490c67f18e0bf13de6f6b
+size: 835
+db_key: train_model
+extra_data:
+  confusion matrix table.csv: /User/getting-started-tutorial/jobs/model/2/confusion
+    matrix table.csv
+  confusion matrix: /User/getting-started-tutorial/jobs/model/plots/2/confusion-matrix.html
+  precision_recall_multi: /User/getting-started-tutorial/jobs/model/plots/2/precision-recall-multiclass.html
+  roc_multi: /User/getting-started-tutorial/jobs/model/plots/2/roc-multiclass.html
+  validation-confusion matrix table.csv: /User/getting-started-tutorial/jobs/model/2/confusion
+    matrix table.csv
+  validation-confusion matrix: /User/getting-started-tutorial/jobs/plots/confusion-matrix.html
+  validation-precision_recall_multi: /User/getting-started-tutorial/jobs/plots/precision-recall-multiclass.html
+  validation-roc_multi: /User/getting-started-tutorial/jobs/plots/roc-multiclass.html
+model_file: model.pkl
+metrics:
+  accuracy: 0.9705882352941176
+  test-error: 0.029411764705882353
+  auc-micro: 0.9961072664359862
+  auc-weighted: 0.9949732620320856
+  f1-score: 0.9679633867276888
+  precision_score: 0.9666666666666667
+  recall_score: 0.9722222222222222
+  validation-accuracy: 0.9333333333333333
+  validation-test-error: 0.06666666666666667
+  validation-auc-micro: 0.9977777777777778
+  validation-auc-weighted: 1.0
+  validation-f1-score: 0.9137254901960784
+  validation-precision_score: 0.8888888888888888
+  validation-recall_score: 0.9629629629629629
+inputs: []
+outputs: []
+framework: ''
+updated: '2020-07-28T19:20:26.725255+00:00'
+labels:
+  class: sklearn.linear_model.LogisticRegression
+producer:
+  name: train
+  kind: run
+  uri: default/d188f9609d714e75b6eef174a2c6873a-2
+  owner: admin
+sources:
+- name: dataset
+  path: /User/getting-started-tutorial/jobs/data/iris_dataset.csv
+project: default

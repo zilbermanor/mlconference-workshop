@@ -1,0 +1,4 @@
+state,iter,param.p2,param.p1,output.accuracy,output.loss
+completed,1,5,3,6,9
+completed,2,5,7,14,21
+completed,3,5,5,10,15
